@@ -12,3 +12,7 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+window.onscroll = () => {
+  navbarNav.classList.remove("active");
+};
