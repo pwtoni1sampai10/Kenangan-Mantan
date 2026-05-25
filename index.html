@@ -26,29 +26,72 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#About">About</a>
-        <a href="#Cerita">Cerita</a>
+        <!-- <a href="#Cerita">Cerita</a> -->
         <a href="#Mantan">Mantan</a>
+        <a href="#Album">Album</a>
         <a href="#Contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="camera"><i data-feather="camera"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Searcing Star -->
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari mantan..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+
+      <!-- Searcing End -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/album-pantai.jpg" alt="Album 1" />
+          <div class="item-detail">
+            <h3>Album 1</h3>
+            <div class="item-price">Tahun 2025</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/album-pantai.jpg" alt="Album 2 " />
+          <div class="item-detail">
+            <h3>Album 2</h3>
+            <div class="item-price">Tahun 2026</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/album-pantai.jpg" alt="Album 3" />
+          <div class="item-detail">
+            <h3>Album 3</h3>
+            <div class="item-price">Tahun 2027</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart end -->
     </nav>
     <!-- navbar selesai -->
 
     <!-- hero Section star -->
     <section class="hero" id="home">
-      <main class="conten">
-        <h1>Kenangan <span>Mantan</span></h1>
-        <p>
-          "Menyimpan yang Pernah Ada" Sebuah tempat untuk mengenang, merelakan,
-          dan melangkah maju.
-        </p>
-        <a href="#Mantan" class="cta">Lihat Mantan</a>
-      </main>
+      <div class="mask-container">
+        <main class="conten">
+          <h1>Kenangan <span>Mantan</span></h1>
+          <p>
+            "Menyimpan yang Pernah Ada" Sebuah tempat untuk mengenang,
+            merelakan, dan melangkah maju.
+          </p>
+          <a href="#Mantan" class="cta">Lihat Mantan</a>
+        </main>
+      </div>
     </section>
     <!-- hero Section star selesai -->
 
@@ -74,8 +117,7 @@
     </section>
 
     <!-- Section about selesai -->
-
-    <!-- Cerita Section star -->
+    <!-- 
     <section id="Cerita" class="cerita">
       <h2><span>Cerita</span> Kenangan</h2>
       <div class="grid-container">
@@ -131,7 +173,7 @@
         </div>
       </div>
     </section>
-    <!-- Cerita Section end -->
+  -->
 
     <!-- Mantan Section Star -->
     <section id="Mantan" class="Mantan">
@@ -196,10 +238,87 @@
     </section>
     <!-- Mantan Section end -->
 
-    <!-- Album Section star -->
+    <!-- Products Section start -->
+    <section class="products" id="Album">
+      <h2><span>Album</span> Kami</h2>
+      <p>
+        Di sini kami menyimpan kenangan-kenangan indah yang pernah kami bagi
+        bersama mantan-mantan kami. Setiap album adalah sebuah cerita, sebuah
+        perjalanan yang pernah kami lalui. Meskipun sekarang sudah menjadi
+        bagian dari masa lalu, kenangan-kenangan ini tetap berharga dan layak
+        untuk dikenang.
+      </p>
 
-    <!-- Album Section end -->
-
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/album-pantai.jpg" alt="Album 1" />
+          </div>
+          <div class="product-content">
+            <h3>Kenangan di Pantai</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Tahun 2023</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/album-pantai.jpg" alt="Album 2" />
+          </div>
+          <div class="product-content">
+            <h3>Kenangan di Pantai</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">Tahun 2024</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/album-pantai.jpg" alt="Foto Mantan 3" />
+          </div>
+          <div class="product-content">
+            <h3>Kenangan di Pantai</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">Tahun 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section end -->
     <!-- Contact Section star -->
     <section id="Contact" class="contack">
       <h2><span>Kontak</span> Kami</h2>
@@ -245,7 +364,9 @@
     <!-- Footer Section Star -->
     <footer>
       <div class="social">
-        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="https://www.youtube.com/watch?v=kvyJPvJKTBI"
+          ><i data-feather="youtube"></i
+        ></a>
         <a href="#"><i data-feather="twitter"></i></a>
         <a href="#"><i data-feather="instagram"></i></a>
       </div>
@@ -257,11 +378,44 @@
         <a href="#Contact">Kontak Kami</a>
       </div>
       <div class="credit">
-        <p>Dibuat dengan ❤️ oleh Tim Kenangan Mantan</p>
+        <p>
+          Dibuat dengan ❤️ oleh Tim Kenangan Mantan (Tony Yansen Pranata
+          Sitorus)
+        </p>
       </div>
-      <p>&copy; 2024 Kenangan Mantan. All rights reserved.</p>
+      <p>&copy; 2024 Kenangan Mantan . All rights reserved.</p>
     </footer>
     <!-- Footer Section end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/album-pantai.jpg" alt="album pantai" />
+          <div class="product-content">
+            <h3>kengan di Pantai</h3>
+            <p>
+              Kenangan indah yang pernah kita bagi di tepi pantai, dengan suara
+              ombak yang menenangkan dan angin sepoi-sepoi yang menyentuh kulit.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Tahun <span>2025</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
     <script>
       feather.replace();
     </script>
